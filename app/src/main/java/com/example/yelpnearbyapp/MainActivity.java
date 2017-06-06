@@ -279,10 +279,8 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
 
         hmRestaurantParams = new HashMap<>();
         hmRestaurantParams.put("term", "restaurants");
-//        hmRestaurantParams.put("latitude", String.valueOf(location.getLatitude()));
-        hmRestaurantParams.put("latitude", "36.778259");
-//        hmRestaurantParams.put("longitude", String.valueOf(location.getLongitude()));
-        hmRestaurantParams.put("longitude", "-119.417931");
+        hmRestaurantParams.put("latitude", String.valueOf(location.getLatitude()));
+        hmRestaurantParams.put("longitude", String.valueOf(location.getLongitude()));
 
         Bitmap bitmap = HelperFunctions.getBitmap(MainActivity.this, R.drawable.ic_my_location_black_24dp);
         LatLng latlng = new LatLng(Double.parseDouble(hmRestaurantParams.get("latitude")), Double.parseDouble(hmRestaurantParams.get("longitude")));
