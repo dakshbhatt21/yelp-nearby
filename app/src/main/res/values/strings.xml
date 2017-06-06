@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">YelpNearBy</string>
+    <string name="title_activity_main">Search Restaurants</string>
+    <string name="search_nearby_restaurants">Search Nearby Restaurants</string>
+</resources>
